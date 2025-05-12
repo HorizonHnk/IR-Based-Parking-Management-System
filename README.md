@@ -19,3 +19,20 @@ This project implements a comprehensive parking management solution using infrar
 - Digital counter ICs (CD40110/74LS192/74LS191)
 - 7-segment LED displays
 - Power regulation circuitry
+
+
+┌───────────┐    ┌───────────┐    ┌───────────┐
+│ IR Sensors │───>│ Signal    │───>│ Counter   │
+│ (Entry)    │    │ Processing│    │ Circuits  │
+└───────────┘    └───────────┘    └─────┬─────┘
+│
+┌───────────┐    ┌───────────┐    ┌─────▼─────┐
+│ IR Sensors │───>│ Signal    │───>│ Display   │
+│ (Exit)     │    │ Processing│    │ System    │
+└───────────┘    └───────────┘    └───────────┘
+
+> **Implementation Tip**: Use Schmidt trigger buffers for mechanical button interfaces to eliminate bounce effects.
+
+## Video Tutorial Series
+For detailed implementation guides and troubleshooting, visit our YouTube channel:
+[Digital Systems Engineering](https://www.youtube.com/playlist?list=PLrZbkNpNVSwy9fEkcHNX9e-MsvJz9Zem-)
